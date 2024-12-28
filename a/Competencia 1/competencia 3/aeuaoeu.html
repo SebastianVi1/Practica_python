@@ -1,0 +1,26 @@
+import matplotlib.pyplot as plt
+</h1>
+# Datos
+categories = ["Fenómenos Naturales", "Crecimiento Demográfico", "Industrialización", "Uso de Energía"]
+relationships = ["Influye en", "Influido por", "Influido por"]
+
+# Crear un gráfico de dispersión
+fig, ax = plt.subplots(figsize=(8, 6))
+
+# Agregar flechas y etiquetas
+for i, category in enumerate(categories[1:]):
+    ax.arrow(0.5, 0.8 - 0.2*i, 0, -0.1, head_width=0.02, head_length=0.05, fc='black', ec='black')
+    ax.text(0.5, 0.82 - 0.2*i, relationships[i], ha='center', va='center')
+
+# Configuración del eje
+ax.set_xlim(0, 1)
+ax.set_ylim(0, 1)
+ax.axis("off")
+
+# Añadir etiquetas a los nodos
+for i, category in enumerate(categories):
+    ax.text(0.5, 0.9 - 0.2*i, category, ha='center', va='center', fontweight='bold')
+
+# Mostrar el gráfico
+plt.title("Cuadro Sinóptico")
+plt.show()

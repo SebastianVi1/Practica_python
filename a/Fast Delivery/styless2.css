@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('fondito.jpg');
+    min-height: 600px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Estilos para la barra de navegación dentro del encabezado */
+nav {
+    height: 60px;
+    background: black;
+    color: whitesmoke;
+    padding: 10px;
+    align-items: center;
+    text-decoration: none;
+    justify-content:space-between;
+    display: flex;
+}
+
+header nav h3{
+    margin: 0;
+}
+/* Estilos para la lista dentro de la barra de navegación */
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+/* Estilos para los elementos de la lista dentro de la barra de navegación */
+header ul li {
+    font-family: 'Lucida Sans', sans-serif;
+    display: inline-block;
+    margin: 10px;
+    line-height: 20px;
+    
+    
+}
+
+/* Limpia después de los elementos flotantes */
+.line-fix {
+    clear: both;
+}
+
+/* Estilos para el contenido principal */
+.header {
+    margin-top: 200px;
+    margin-left: 100px;
+}
+
+/* Estilos para los botones */
+button {
+    border-radius: 10px;
+    width: 4cm;
+    height: 1cm;
+    background-color: rgb(50, 15, 15);
+    color: white;
+}
+
+button:hover {
+    background-color: aqua;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos para la sección principal */
+section {
+    margin-left: 100px;
+}
+
+/* Estilos para las cartas de la sección */
+.carta {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 50px 10px;
+    max-width: 2000px;
+}
+.carta article {
+    max-width: 350px; /* Ancho máximo para cada artículo */
+    text-align: center; /* Alinea el contenido al centro */
+    margin: 15px; /* Espacio entre cada artículo */
+}
+
+.carta img {
+    max-width: 100%; /* La imagen no debe exceder el ancho del artículo */
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+}
+/* Estilos para las imágenes dentro de las cartas */
+section img {
+    max-width: 300px;
+}
